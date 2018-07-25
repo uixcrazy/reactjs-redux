@@ -1,0 +1,26 @@
+{
+  "extends": ["airbnb/base", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "indent": ["error", 2],
+    "max-len": [2, 120, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": false
+    }],
+    "comma-dangle": ["error", "always-multiline", {
+      "functions": "ignore"
+    }]
+  }
+}
